@@ -5,7 +5,7 @@ defmodule Example.Mixfile do
     [
       app: :distillery_example,
       version: "0.1.0",
-      elixir: "~> 1.9",
+      elixir: "1.9",
       elixirc_paths: elixirc_paths(Mix.env()),
       compilers: [:phoenix, :gettext] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
@@ -33,18 +33,18 @@ defmodule Example.Mixfile do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:phoenix, "~> 1.4"},
-      {:phoenix_pubsub, "~> 1.0"},
-      {:phoenix_ecto, "~> 4.0"},
-      {:phoenix_html, "~> 2.10"},
-      {:plug_cowboy, "~> 2.0"},
-      {:ecto_sql, "~> 3.0"},
-      {:postgrex, ">= 0.0.0"},
-      {:jason, "~> 1.0"},
-      {:gettext, "~> 0.11"},
-      {:distillery, "~> 2.0"},
-      {:libcluster, "~> 3.0"},
-      {:libcluster_ec2, "~> 0.4"}
+      {:phoenix, "1.4"},
+      {:phoenix_pubsub, "1.0"},
+      {:phoenix_ecto, "4.0"},
+      {:phoenix_html, "2.10"},
+      {:plug_cowboy, "2.0"},
+      {:ecto_sql, "3.0"},
+      {:postgrex, "0.0.0"},
+      {:jason, "1.0"},
+      {:gettext, "0.11"},
+      {:distillery, "2.0"},
+      {:libcluster, "3.0"},
+      {:libcluster_ec2, "0.4"}
     ]
   end
 
